@@ -1,0 +1,16 @@
+1662353286479	geckodriver	INFO	Listening on 127.0.0.1:57950
+1662353289515	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\John\\AppData\\Local\\Temp\\rust_mozprofilez1amt5"
+1662353290404	Marionette	INFO	Marionette enabled
+1662353290418	Marionette	INFO	Listening on port 57959
+1662353290889	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\John\\AppData\\Local\\Temp\\rust_mozprofilez1amt5\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+1662353309528	Marionette	INFO	Stopped listening on port 57959
+1662353316462	geckodriver	INFO	Listening on 127.0.0.1:57997
+1662353319549	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\John\\AppData\\Local\\Temp\\rust_mozprofileotgi6d"
+1662353320329	Marionette	INFO	Marionette enabled
+1662353320343	Marionette	INFO	Listening on port 58006
+1662353320789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\John\\AppData\\Local\\Temp\\rust_mozprofileotgi6d\\search.json.mozlz4", (void 0)))
+1662353323560	Marionette	INFO	Stopped listening on port 58006
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
