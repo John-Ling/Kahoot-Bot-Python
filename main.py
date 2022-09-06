@@ -62,27 +62,24 @@ def main():
     host.wait_for_url_change()
 
     # answer kahoot question of quiz until game ends
-    while host.driver.current_url != "https://kahoot.it/v2/ranking":
+    END_URL = "https://kahoot.it/v2/ranking"
+    while host.driver.current_url != END_URL:
         host.wait_for_url_change()
         print("Answering question")
         time.sleep(1)
         availableButtons = host.remove_options()
-        i = 0
-        for bot in host.bots:
+        for i in range (len(host.bots)):
+            bot = host.bots[i]
             if bot.joinSuccessful == True:
                 host.driver.switch_to.window(host.driver.window_handles[i])
                 host.answer_question(availableButtons)
-            else:
-                # ignore this tab since the bot has failed to join
-                pass
-            i += 1
 
         host.wait_for_url_change()
         host.wait_for_url_change()
 
     # shutdown
     print("Game has ended")
-    input("End program: ")
+    input("End program? ")
     print("Terminating bots... ")
     host.driver.quit()
 
@@ -92,10 +89,9 @@ def main():
     del host
 
 
-class Bot():  # custom datatype for different traits such as their join status or if they're a leader
-    def __init__(self, name, score, joinSuccessful):
+class Bot():  # custom datatype for different traits such as their join status
+    def __init__(self, name, joinSuccessful):
         self.name = name
-        self.score = score
         self.joinSuccessful = joinSuccessful
 
 
@@ -114,20 +110,22 @@ class Host():  # control bot for all player bots under it
         # create a bot and send it to a kahoot lobby
         # create bot
         # original bot name with its number attached to it
+        KAHOOT_URL = "https://kahoot.it/"
+
         numberedBotName = self.botName + str(botNumber)
-        bot = Bot(numberedBotName, 0, joinSuccessful=False)
+        bot = Bot(name=numberedBotName, joinSuccessful=False)
 
         joinSuccessful = False
-        self.driver.get("https://kahoot.it/")
+        self.driver.get(KAHOOT_URL)
 
         try:
             # delay workaround since kahoot blocks bots
             # the blocks seem to be timer based
             # refreshing the page to create a brief pause seems to be the quickest way to bypass this
-            workaroundDelay = 0.5
-            if delay == True:
+            WORKAROUND_DELAY = 0.5
+            if delay:
                 self.driver.refresh()
-                time.sleep(workaroundDelay)
+                time.sleep(WORKAROUND_DELAY)
             # while this workaround does prevent most bots from being blocked
             # rate of bot joining reduces slightly and on average 2 bots will fail to join since the join cooldown time appears to fluctuate randomly
 
@@ -153,10 +151,8 @@ class Host():  # control bot for all player bots under it
 
     def remove_options(self):
         # remove buttons that are not present in the question (such as a true or false question with only two options)
-        buttonIDPresent = ["triangle-button",
-                           "diamond-button", "circle-button", "square-button"]
-        tmp = ["triangle-button", "diamond-button",
-               "circle-button", "square-button"]
+        buttonIDPresent = ["triangle-button", "diamond-button", "circle-button", "square-button"]
+        tmp = ["triangle-button", "diamond-button", "circle-button", "square-button"]
 
         for id in buttonIDPresent:
             try:
