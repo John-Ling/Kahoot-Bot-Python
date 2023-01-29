@@ -1,0 +1,51 @@
+1674987929450	geckodriver	INFO	Listening on 127.0.0.1:53516
+1674987932506	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\John\\AppData\\Local\\Temp\\rust_mozprofileLrouB4"
+1674987932810	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1674987932816	Marionette	INFO	Listening on port 53525
+1674987933113	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\John\\AppData\\Local\\Temp\\rust_mozprofileLrouB4\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://kahoot.it."
+1674988117015	Marionette	INFO	Stopped listening on port 53525
+Dynamically enable window occlusion 1
+[Parent 1252, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
